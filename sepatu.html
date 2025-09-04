@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sepatu - Renz Clothing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin()">
+  <header>
+    <div class="logo">🛍️ Renz Clothing</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="baju.html">Baju</a></li>
+        <li><a href="celana.html">Celana</a></li>
+        <li><a href="sepatu.html">Sepatu</a></li>
+        <li><a href="keranjang.html">Keranjang</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products">
+    <h2>Sepatu Formal</h2>
+    <div class="product-grid">
+      <div class="product-card"><h3>Adidas</h3><p>Rp. 500.000</p><button onclick="addToCart('Adidas Formal',500000)">Beli</button></div>
+      <div class="product-card"><h3>Nike</h3><p>Rp. 600.000</p><button onclick="addToCart('Nike Formal',600000)">Beli</button></div>
+      <div class="product-card"><h3>Converse</h3><p>Rp. 1.500.000</p><button onclick="addToCart('Converse Formal',1500000)">Beli</button></div>
+    </div>
+
+    <h2>Sneakers</h2>
+    <div class="product-grid">
+      <div class="product-card"><h3>Air Jordan</h3><p>Rp. 5.000.000</p><button onclick="addToCart('Air Jordan',5000000)">Beli</button></div>
+      <div class="product-card"><h3>Nike Air Force 1</h3><p>Rp. 2.000.000</p><button onclick="addToCart('Nike Air Force 1',2000000)">Beli</button></div>
+      <div class="product-card"><h3>Adidas Ultraboost</h3><p>Rp. 1.500.000</p><button onclick="addToCart('Adidas Ultraboost',1500000)">Beli</button></div>
+      <div class="product-card"><h3>Converse Chuck Taylor</h3><p>Rp. 500.000</p><button onclick="addToCart('Converse Chuck Taylor',500000)">Beli</button></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
