@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Renz Clothing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin(); loadCart();">
+  <header>
+    <div class="logo">🛍️ Renz Clothing</div>
+  </header>
+
+  <section class="checkout">
+    <h2>Checkout</h2>
+    <div id="cartItems"></div>
+    <p id="totalPrice"></p>
+
+    <h3>Metode Pembayaran</h3>
+    <select id="paymentMethod">
+      <option value="Dana">Dana</option>
+      <option value="OVO">OVO</option>
+      <option value="Gojek">Gojek</option>
+    </select>
+    <button onclick="checkout()">Bayar Sekarang</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
