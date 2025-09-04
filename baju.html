@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baju - Renz Clothing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin()">
+  <header>
+    <div class="logo">🛍️ Renz Clothing</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="baju.html">Baju</a></li>
+        <li><a href="celana.html">Celana</a></li>
+        <li><a href="sepatu.html">Sepatu</a></li>
+        <li><a href="keranjang.html">Keranjang</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products">
+    <h2>Baju Kaos</h2>
+    <div class="product-grid">
+      <div class="product-card"><h3>Dreambirds Artwear</h3><p>Rp. 150.000</p><button onclick="addToCart('Dreambirds Artwear',150000)">Beli</button></div>
+      <div class="product-card"><h3>Kemengski</h3><p>Rp. 195.000</p><button onclick="addToCart('Kemengski',195000)">Beli</button></div>
+      <div class="product-card"><h3>Erigo</h3><p>Rp. 165.000</p><button onclick="addToCart('Erigo',165000)">Beli</button></div>
+      <div class="product-card"><h3>Peter Says Denim</h3><p>Rp. 100.000</p><button onclick="addToCart('Peter Says Denim',100000)">Beli</button></div>
+    </div>
+
+    <h2>Baju Kemeja</h2>
+    <div class="product-grid">
+      <div class="product-card"><h3>Uniqlo</h3><p>Rp. 200.000</p><button onclick="addToCart('Uniqlo Kemeja',200000)">Beli</button></div>
+      <div class="product-card"><h3>Levi's</h3><p>Rp. 300.000</p><button onclick="addToCart('Levi Kemeja',300000)">Beli</button></div>
+      <div class="product-card"><h3>Gap</h3><p>Rp. 250.000</p><button onclick="addToCart('Gap Kemeja',250000)">Beli</button></div>
+      <div class="product-card"><h3>H&M</h3><p>Rp. 150.000</p><button onclick="addToCart('H&M Kemeja',150000)">Beli</button></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+                                                                </html>
+    
