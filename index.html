@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renz Clothing - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin()">
+  <header>
+    <div class="logo">🛍️ Renz Clothing</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="baju.html">Baju</a></li>
+        <li><a href="celana.html">Celana</a></li>
+        <li><a href="sepatu.html">Sepatu</a></li>
+        <li><a href="keranjang.html">Keranjang</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h1>Selamat Datang di Renz Clothing</h1>
+    <p>Temukan fashion terbaikmu di sini 🔥</p>
+  </section>
+
+  <section class="featured">
+    <h2>Produk Unggulan</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="assets/baju1.jpg" alt="Baju Kaos">
+        <h3>Dreambirds Artwear</h3>
+        <p>Rp. 150.000</p>
+        <button onclick="addToCart('Dreambirds Artwear',150000)">Tambah ke Keranjang</button>
+      </div>
+      <div class="product-card">
+        <img src="assets/celana1.jpg" alt="Celana Jeans">
+        <h3>Levi's Jeans</h3>
+        <p>Rp. 500.000</p>
+        <button onclick="addToCart('Levi Jeans',500000)">Tambah ke Keranjang</button>
+      </div>
+      <div class="product-card">
+        <img src="assets/sepatu1.jpg" alt="Sneakers">
+        <h3>Nike Air Force 1</h3>
+        <p>Rp. 2.000.000</p>
+        <button onclick="addToCart('Nike Air Force 1',2000000)">Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
