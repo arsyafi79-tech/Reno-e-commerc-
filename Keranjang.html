@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang - Renz Clothing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin(); loadCart();">
+  <header>
+    <div class="logo">🛍️ Renz Clothing</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="cart">
+    <h2>Keranjang Belanja</h2>
+    <div id="cartItems"></div>
+    <p id="totalPrice"></p>
+    <a href="checkout.html" class="btn">Lanjutkan ke Checkout</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
